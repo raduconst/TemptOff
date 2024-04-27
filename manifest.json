@@ -1,0 +1,24 @@
+{
+  "name": "TemptOff",
+  "description": "Leave temptation outside",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html"
+  },
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.facebook.com/*",
+    "*://*.instagram.com/*"
+  ],
+  "permissions": ["declarativeNetRequest", "storage", "activeTab"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset",
+        "enabled": true,
+        "path": "redirect-rules.json"
+      }
+    ]
+  }
+}

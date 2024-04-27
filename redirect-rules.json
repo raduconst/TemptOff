@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "condition": {
+      "urlFilter": "*://*.youtube.com/*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome://newtab"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "condition": {
+      "urlFilter": "*://*.facebook.com/*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome://newtab"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "condition": {
+      "urlFilter": "*://*.instagram.com/*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "chrome://newtab"
+      }
+    }
+  }
+]
